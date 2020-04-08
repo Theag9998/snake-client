@@ -12,6 +12,7 @@ const connect = function() {
 	});
 	conn.on("connect", () => {
 		console.log('connected!');
+		conn.write('Name: SKY');
 	})
 
   return conn;
