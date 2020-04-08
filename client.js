@@ -13,6 +13,10 @@ const connect = function() {
 	conn.on("connect", () => {
 		console.log('connected!');
 		conn.write('Name: SKY');
+		setInterval(() => {
+		//conn.write('Move: up');
+		}, 50);
+		
 	})
 
   return conn;
